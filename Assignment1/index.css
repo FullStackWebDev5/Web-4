@@ -1,0 +1,14 @@
+body {
+	margin: 0;
+}
+#upper-content {
+	background-color: #FFCD9E;
+	height: 70vh;
+}
+#lower-content {
+	background-color: black;
+	height: 30vh;
+}
+#main-heading {
+	font-family: 'Inter', sans-serif;
+}

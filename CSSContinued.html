@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS</title>
+	<style>
+		/*
+			- display	
+			- postion
+			- flexbox
+		*/
+
+		#parent {
+			height: 200px;
+			background-color: tomato;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+
+		#child1, #child2, #child3, #child4, #child5, #child6 {
+			height: 150px;
+			width: 100px;
+			background-color: black;
+			color: white;
+			font-size: 3rem;
+		}
+	</style>
+</head>
+<body>
+	<div id="parent">
+		<div id="child1">1</div>
+		<div id="child2">2</div>
+		<div id="child3">3</div>
+		<div id="child4">4</div>
+		<div id="child5">5</div>
+		<div id="child6">6</div>
+		<p>
+			Our team scouts the internet for the best designs, illustrations and art and delivers a truly inspiring one every day to your inbox
+		</p>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- 
+	<span>Archit</span>
+	<span id="test1">Archit</span>
+	<span>Archit</span> -->
+	<!-- <h1 id="test2">Archit</h1>
+	<h1 id="test2">Archit</h1>
+	<h1 id="test2">Archit</h1>
+	/* #test1 {
+		display: block;
+	} */
+
+	/* #test2 {
+		display: inline-block;
+		height: 100px;
+	} */
+
+	<h3 id="item-3">I'm fixed at this place</h3>
+	<h1>Dummy heading</h1>
+	<div id="item-1">
+		<div id="item-2"></div>
+	</div>
+	body {
+		height: 200vh;
+	}
+	#item-1 {
+		height: 500px;
+		width: 500px;
+		background-color: tomato;
+	}
+	#item-2 {
+		height: 200px;
+		width: 200px;
+		background-color: DodgerBlue;
+		position: sticky;
+		left: 0;
+		top: 0;
+	}
+-->

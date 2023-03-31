@@ -1,0 +1,27 @@
+/* 
+	Syntax:
+	element {
+		property: value
+	} 
+*/
+
+h1 {
+	color: white;
+	background-color: black;
+}
+p {
+	color: blue;
+	background-color: lightblue;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+img {
+	height: 100px;
+	width: 100px;
+}
+.test1 {
+	color: green;
+}
+#xyz1 {
+	color: red;
+}
