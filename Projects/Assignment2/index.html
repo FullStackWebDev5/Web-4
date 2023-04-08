@@ -4,17 +4,44 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Counter</title>
 	<link rel="stylesheet" href="index.css">
 </head>
 <body>
-	<h1 id="count">0</h1>
 	<div id="buttons-and-input">
-		<input type="number" placeholder="Enter any number"><br><br>
-		<button>Increment 1</button>
-		<button>Decrement 1</button>
+		<p id="count">0</p>
+		<button onclick="increment(1)">+ 1</button>
+		<button onclick="decrement(1)">- 1</button>
+		<button onclick="reset()">Reset</button>
+		<button onclick="increment(5)">+ 5</button>
+		<button onclick="decrement(10)">- 10</button>
+		<br><br>
+		<input type="number" placeholder="Enter number to increment" id="increment-input">
+		<button onclick="incrementRandom()">+</button>
+		<button onclick="decrementRandom()">-</button>
 	</div>
 	<script src="index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	<!--
 		Counter App
 		- 'Increment 1' button - on clicking: Increase value by 1
@@ -32,5 +59,3 @@
 		- Push to Github
 		- Deploy (Free deployment - Optional)
 	-->
-</body>
-</html>
