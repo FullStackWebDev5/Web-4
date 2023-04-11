@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS Objects</title>
+	<script>
+		// JS Objects: Collections of key: value pairs
+		// Used to have named index
+		// var obj1 = {
+		//	key1: value1,
+		//  key2: value2
+		// };
+
+		// var amanDetails = {
+		// 	firstName: 'Aman',
+		//  	lastName: 'Rawat',
+		// 	age: 25,
+		// 	likesIcecream: true,
+		// 	carName: null,
+		// 	hobbies: ['Swimming', 'Dancing', 'Singing'],
+		// 	address: {
+		// 		city: 'Mumbai',
+		// 		state: 'Maharashtra',
+		// 		country: 'India'
+		// 	}
+		// };
+
+		// Access object values using key
+		// 1. Square bracket and named index
+		// console.log('My name is ' + amanDetails['firstName'] + ' ' + amanDetails['lastName'] + '. I\'m ' + amanDetails['age'] + ' years old!')
+
+		// 2. Using dot operator
+		// console.log('My name is ' + amanDetails.firstName + ' ' + amanDetails.lastName + '. I\'m ' + amanDetails.age + ' years old!')
+
+		// console.log(amanDetails.hobbies)
+
+		// # Properties and Methods
+		// Properties: key holding values other than functions
+		// Methods: key holding functions as value
+
+		// var amanDetails = {
+		// 	firstName: 'Aman',
+		//  	lastName: 'Rawat',
+		// 	sayHi: function (friendName) {
+		// 		console.log('Hi ' + friendName + '!')
+		// 	}
+		// };
+		// amanDetails.sayHi('Kritik')
+
+		var amanDetails = {
+			firstName: 'Aman',
+		 	lastName: 'Rawat',
+		};
+
+		// let amanDetailsKeys = Object.keys(amanDetails) // Returns an array of object keys
+		// console.log(amanDetailsKeys)
+
+		// let amanDetailsValues = Object.values(amanDetails) // Returns an array of object values
+		// console.log(amanDetailsValues)
+
+		// let amanDetailsEntries = Object.entries(amanDetails) // Returns an array of arrays (Inner array with be of length 2, i.e, key and value)
+		// console.log(amanDetailsEntries)
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
