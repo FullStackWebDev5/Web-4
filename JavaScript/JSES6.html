@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS ES6</title>
+	<script>
+		// # let, const 
+
+		// # let (block scope)
+		// if (10 > 5) {
+		// 	let x = 20
+		// }
+		// console.log(x)
+
+		// console.log(x)
+		// let x
+
+		// #const (block scope, constant value - cannot be changed later)
+		// const x = 5
+		// x = 10
+		// console.log(x)
+
+		/* ---------------------------------------------------------------- */
+		// # Arrow functions (=>)
+		// Either one expression to execute or return: We can skip {} and return keyword
+
+		// const abc = () => console.log('abc')
+		// abc()
+
+		// const sum = (a, b) => a + b
+		// console.log(sum(83749, 10))
+
+		/* ---------------------------------------------------------------- */
+		// # Template Strings
+		// To access variable values: ${}
+
+		// var amanDetails = {
+		// 	firstName: 'Aman',
+		//  	lastName: 'Rawat',
+		// 	age: 25,
+		// };
+
+		// console.log('My name is ' + amanDetails.firstName + ' ' + amanDetails.lastName + '. I\'m ' + amanDetails.age + ' years old!')
+
+		// console.log(`My name is ${amanDetails.firstName} ${amanDetails.lastName}. I'm ${amanDetails.age} years old!`)
+
+		/* ---------------------------------------------------------------- */
+		// # Spread Operator (...) 
+		// Used with Arrays and Objects
+
+		// let arr = [3, 1, 7, 9, 12]
+		// console.log(arr)
+		// console.log(...arr)
+
+		// let arr1 = [3, 1, 7, 9, 12]
+		// let arr2 = [4, 783, 12, 987]
+
+		// let arr3 = []
+		// for(let i = 0; i < arr1.length; i++) {
+		// 	arr3.push(arr1[i])
+		// }
+		// for(let i = 0; i < arr2.length; i++) {
+		// 	arr3.push(arr2[i])
+		// }
+
+		// let arr3 = [...arr1, ...arr2]
+		// console.log(arr3)
+
+		// let obj1 = {
+		// 	a: 5,
+		// 	b: 10
+		// }
+
+		// let obj2 = {
+		// 	c: 15,
+		// 	d: 20
+		// }
+
+		// let obj3 = {
+		// 	...obj1,
+		// 	...obj2
+		// }
+		// console.log(obj3)
+		/* ---------------------------------------------------------------- */
+		// # Destructuring 
+		// let amanDetails = {
+		// 	firstName: 'Aman',
+		//  	lastName: 'Rawat',
+		// 	age: 25,
+		// }
+
+		// let {
+		// 	firstName,
+		//  	lastName,
+		// 	age,
+		// } = amanDetails
+
+		// console.log(`My name is ${firstName} ${lastName}. I'm ${age} years old!`)
+
+		// var amanDetails = {
+		// 	firstName: 'Aman',
+		//  	lastName: 'Rawat',
+		// 	age: 25,
+		// 	likesIcecream: true,
+		// 	address: {
+		// 		city: 'Mumbai',
+		// 		state: 'Maharashtra',
+		// 		country: 'India'
+		// 	}
+		// };
+
+		// let {
+		// 	firstName,
+		// 	age,
+		// 	address: {
+		// 		country
+		// 	}
+		// } = amanDetails
+
+		// console.log(firstName, age, country)
+
+		// let arr = [3, 5, 6]
+		// let [a, b, c] = arr
+
+		// console.log(a, b, c)
+
+		// function abc({
+		// 	firstName,
+		// 	lastName,
+		// }) {
+		// 	console.log(firstName, lastName)
+		// }
+
+		// let obj1 = {
+		// 	firstName: 'Ashutosh',
+		// 	lastName: 'Tiwari'
+		// }
+		// abc(obj1)
+
+		/* ---------------------------------------------------------------- */
+		// # Exponential Operator (**)
+		// console.log(5 ** 4)
+
+		/* ---------------------------------------------------------------- */
+		// includes(): If any element belongs to an array/ string
+		// if element exists in the array -> return true, else return false
+
+		// let arr = [2, 5, 3, 1, 9]
+		// console.log(arr.includes(8))
+
+		// let str = 'JavaScript'
+		// console.log(str.includes('aSc'))
+		/* ---------------------------------------------------------------- */
+		// Default Parameters
+		// function sum(a, ...rest) {
+		// 	let sum = 0
+		// 	sum = sum + a
+		// 	for(let i = 0; i< rest.length; i++) {
+		// 		sum = sum + rest[i]
+		// 	}
+		// 	console.log(sum)
+		// }
+		// sum(5, 10, 56, 89, 32, 46)
+	</script>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<!-- 
+	- JS is loosely typed
+	- Syntactic sugar (Eg: ternary operator - ? : is syntact sugar of if-else)
+	- Hoisting: All declaration in JS are hoisted to the top of the execution thread during runtime
+-->
