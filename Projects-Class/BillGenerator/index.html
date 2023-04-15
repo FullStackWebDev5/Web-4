@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bill Generator</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<div id="container">
+		<h1>Bill Generator</h1>
+		<form>
+			<table>
+				<tr>
+					<th>Product</th>
+					<th>Price</th>
+					<th>Quantity</th>
+					<th>Amount</th>
+				</tr>
+				<tr>
+					<td><input type="text" placeholder="Item 1" id="item-1"></td>
+					<td><input type="number" value="0" id="price-1"></td>
+					<td><input type="number" value="0" id="quantity-1" oninput="calculateBill()"></td>
+					<td><input type="text" placeholder="₹ 0.00" disabled id="amount-1"></td>
+				</tr>
+				<tr>
+					<td><input type="text" placeholder="Item 2" id="item-2"></td>
+					<td><input type="number" value="0" id="price-2"></td>
+					<td><input type="number" value="0" id="quantity-2" oninput="calculateBill()"></td>
+					<td><input type="text" placeholder="₹ 0.00" disabled id="amount-2"></td>
+				</tr>
+				<tr>
+					<td><input type="text" placeholder="Item 3" id="item-3"></td>
+					<td><input type="number" value="0" id="price-3"></td>
+					<td><input type="number" value="0" id="quantity-3" oninput="calculateBill()"></td>
+					<td><input type="text" placeholder="₹ 0.00" disabled id="amount-3"></td>
+				</tr>
+				<tr>
+					<td colspan="3">Subtotal</td>
+					<td><input type="text" placeholder="₹ 0.00" disabled id="sub-total"></td>
+				</tr>
+				<tr>
+					<td colspan="3">Discount %</td>
+					<td><input type="number" value="0" id="discount-percent" oninput="calculateBill()"></td>
+				</tr>
+				<tr>
+					<td colspan="3">Tax %</td>
+					<td><input type="number" value="0" id="tax-percent" oninput="calculateBill()"></td>
+				</tr>
+				<tr>
+					<td colspan="3">Total Amount</td>
+					<td><input type="text" placeholder="₹ 0.00" disabled id="total"></td>
+				</tr>
+			</table>
+		</form>
+		<!-- <button id="calculate-bill" onclick="calculateBill()">Calculate Bill</button> -->
+	</div>
+	<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+#container {
+	margin: 100px auto;
+	text-align: center;
+	width: fit-content;
+}
+
+#container table, #container table th, #container table td {
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+
+#container table th, #container table td {
+	padding: 10px;
+}
+
+#calculate-bill {
+	padding: 5px 10px;
+	border: none;
+	background-color: black;
+	color: white;
+	margin-top: 10px;
+	border-radius: 10px;
+	font-size: 1.2em;
+}
+
+#calculate-bill:hover {
+	cursor: pointer;
+}
