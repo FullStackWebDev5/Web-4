@@ -1,0 +1,42 @@
+body {
+	background: #D6BCFF;
+}
+
+#container {
+	margin: 100px auto;
+	text-align: center;
+	width: fit-content;
+	background: #FFF;
+	padding: 10px;
+	border-radius: 21px;
+}
+
+.tip-buttons {
+	width: 100px;
+}
+
+#bill-input, #people-input, #reset {
+	width: 300px;
+}
+
+#outer-div {
+	display: flex;
+}
+
+#left-section, #right-section {
+	padding: 10px;
+	margin: 10px;
+}
+
+#right-section {
+	background: #9C60FF;
+	border-radius: 11px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+#right-part-1, #right-part-2 {
+	display: flex;
+	justify-content: space-between;
+}

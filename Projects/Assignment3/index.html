@@ -5,32 +5,38 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bill Spill</title>
-	<script>
-		/*
-			Micro-Project 3: Bill Spill
-			Figma Link: https://www.figma.com/file/S51jnHQ5zqS75W8Uy1AdPx/Bill-Spill?node-id=1-7&t=az7jHN8HP4ATgCM6-0
-
-			Eg 1:
-			1000 - Sub-total amount
-			100 - Tip (10%)
-			1100 - Total amount
-			2 - Total people
-
-			50.00 (Tip/person)
-			550.00 (Total amount/person)
-
-			Eg 2:
-			1500 - Sub-total amount
-			750 - Tip (50%)
-			2250 - Total amount
-			3 - Total people
-
-			250.00 (Tip/person)
-			750.00 (Total amount/person)
-		*/
-	</script>
+	<link rel="stylesheet" href="index.css">
 </head>
 <body>
-	
+	<div id="container">
+		<h1>Bill Spill</h1>
+		<div id="outer-div">
+			<div id="left-section">
+				<label>Bill</label><br>
+				<input type="text" placeholder="₹ 0" id="bill-input" oninput="calculateBill()"><br>
+				<label>Select Tip %</label><br>
+				<button class="tip-buttons" onclick="calculateBill(5)">5%</button>
+				<button class="tip-buttons" onclick="calculateBill(10)">10%</button>
+				<button class="tip-buttons" onclick="calculateBill(15)">15%</button><br>
+				<button class="tip-buttons" onclick="calculateBill(25)">25%</button>
+				<button class="tip-buttons" onclick="calculateBill(50)">50%</button>
+				<button class="tip-buttons" onclick="calculateBill(75)">75%</button><br>
+				<label>Number of people</label><br>
+				<input type="number" value="1" id="people-input" oninput="calculateBill()">
+			</div>
+			<div id="right-section">
+				<div id="right-part-1">
+					<div>Tip Amount / person</div>
+					<div id="tip-per-person">₹ 0.00</div>
+				</div>
+				<div id="right-part-2">
+					<div>Total / person</div>
+					<div id="total-per-person">₹ 0.00</div>
+				</div>
+				<button id="reset" onclick="reset()">Reset</button>
+			</div>
+		</div>
+	</div>
+	<script src="index.js"></script>
 </body>
 </html>
