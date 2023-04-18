@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Asynchronous JavaScript</title>
+	<script>
+		/*
+			Synchronous: Executed one line after another
+			Asynchronous: No definited order defined
+		*/
+
+		// console.log(1)
+		// console.log(2)
+		// console.log(3)
+		// console.log(4)
+		// console.log(5)
+
+		// setTimeout: Execute an expression after a given amount of time
+		// 1st argument is a callback containing the expression to execute
+		// 2ns argument is the time in milliseconds
+		// 1000ms -> 1s
+		// # clearTimeout: Clear the timeout
+
+		// setTimeout(() => {
+		// 	console.log('Hi')
+		// }, 3000)
+
+		// console.log(1)
+		// console.log(2)
+		// setTimeout(() => {
+		// 	console.log(3)
+		// }, 0)
+		// console.log(4)
+		// console.log(5)
+
+		// # setInterval: Execute an expression repeatedly after a given amount of time intervals
+		// setInterval(() => {
+		// 	console.log('Hi')
+		// }, 3000)
+		// # clearInterval: Clear the timeInterval
+	</script>
+</head>
+<body>
+	<p id="counter" style="font-size: 15em; text-align: center; margin: auto">10</p>
+	<button onclick="func1()" style="margin: 0 auto; display: block; font-size: 2em;">Stop</button>
+	<h1 id="test" style="text-align: center; margin: 30px auto; font-size: 3em;">Hi</h1>
+	<script>
+		// let count = 10
+		// let timerId = setInterval(() => {
+		// 	count--
+		// 	document.getElementById("counter").innerText = count
+		// }, 1000)
+		// const func1 = () => {
+		// 	clearInterval(timerId)
+		// }
+
+		let timerId = setTimeout(() => {
+			document.getElementById("test").innerText = 'Bye'
+		}, 5000)
+
+		const func1 = () => {
+			clearTimeout(timerId)
+		}
+	</script>
+</body>
+</html>
+
+
+<!--
+	// callback
+	func1(function () {
+
+	})
+
+	func1(() => {
+		
+	})
+
+	// Web APIs
+-->
