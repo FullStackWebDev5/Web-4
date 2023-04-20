@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>APIs and Fetch method</title>
+	<style>
+		table, th, tr, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+	</style>
+	<script>
+		// Fetch: Used to make API calls, returns a promise
+		let users = []
+
+		// fetch('https://fakestoreapi.com/users')
+		// .then((res) => {
+		// 	return res.json()
+		// }).then((res) => {
+		// 	users = res
+		// 	console.log(users)
+		// }).catch((err) => {
+		// 	console.log(err)
+		// })
+	</script>
+</head>
+<body>
+	<p id="test"></p>
+	<table>
+		<tr>
+			<th>User Count</th>
+			<th>User Name</th>
+			<th>User Email</th>
+			<th>User Phone</th>
+		</tr>
+	</table>
+
+	<script>
+		const handleUsersAPI = async () => {
+			let res = await fetch('https://fakestoreapi.com/users')
+			users = await res.json()
+			console.log(users)
+
+			let displayText = ''
+			users.forEach((user) => {
+				displayText = displayText + user.name.firstname + ', '
+			})
+			document.getElementById('test').innerText = displayText
+		}
+		handleUsersAPI()
+	</script>
+</body>
+</html>
+
+<!--
+	Client (FE)							--- API (JSON) ---						Server (BE)
+	
+	JSON: JavaScript Object Notation (Format used by APIs)
+
+	Client (makes 'request' ->) Server
+	Client (<- returns 'response') Server
+
+	Use the following DOM methods to create rows and columns
+	- createElement
+	- appendChild/ append
+-->

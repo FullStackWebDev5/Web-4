@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Promises</title>
+	<script>
+		/*
+			----------------------------------------------------------------
+			Promise: JS Object to handle asynchronous code
+
+			Syntax: 
+			To create a promise object, we will use Promise inbuilt constructor
+			let promise1 = new Promise((resolve, reject) => {
+				resolve()
+			})
+
+			States:
+			1. resolve (fulfill)
+			2. reject
+			3. pending
+
+			.then() -> Handling resolve scenario
+			.catch() -> Handling reject scenario
+			----------------------------------------------------------------
+		*/
+
+		// let x = 0
+		// let promise1 = new Promise((resolve, reject) => {
+		// 	setTimeout(() => {
+		// 		x = 1000
+		// 		resolve()
+		// 	}, 5000)
+		// })
+		// promise1.then(() => {
+		// 	console.log('Resolved')
+		// 	console.log(x)
+		// }).catch(() => {
+		// 	console.log('Rejected')
+		// })
+
+		// let users = []
+
+		// let promise1 = new Promise((resolve, reject) => {
+		// 	// Mimic an API which takes 4s to return array of users
+		// 	setTimeout(() => {
+		// 		users = [{
+		// 			firstName: 'Anjali',
+		// 			lastName: 'Kumari',
+		// 			batchNo: 4
+		// 		}, {
+		// 			firstName: 'Chandan',
+		// 			lastName: 'Pandey',
+		// 			batchNo: 10
+		// 		}, {
+		// 			firstName: 'Rishav',
+		// 			lastName: 'Sagar',
+		// 			batchNo: 8
+		// 		}]
+		// 		resolve()
+		// 	}, 4000)
+		// })
+
+		// promise1.then(() => {
+		// 	console.log(users)
+		// }).catch(() => {
+		// 	console.log('Some error occured')
+		// })
+
+		/*
+			----------------------------------------------------------------
+			Async Await: Syntactic-sugar of Promise handling
+
+			await: Waits for the resolved state of the promise
+			----------------------------------------------------------------
+		*/
+
+		// let promise1 = new Promise((resolve, reject) => {
+		// 	setTimeout(() => {
+		// 		reject('Sorry')
+		// 	}, 2000)
+		// })
+		// promise1.then((resolvedValue) => {
+		// 	console.log(resolvedValue)
+		// }).catch((rejectedValue) => {
+		// 	console.log(rejectedValue)
+		// })
+		// const handlePromise = async () => {
+		// 	try {
+		// 		let resolvedValue = await promise1
+		// 		console.log(resolvedValue)
+		// 	} catch (rejectedValue) {
+		// 		console.log(rejectedValue)
+		// 	}
+		// } 
+		// handlePromise()
+
+		// Example 2:
+		// let users = []
+
+		// let promise1 = new Promise((resolve, reject) => {
+		// 	// Mimic an API which takes 4s to return array of users
+		// 	setTimeout(() => {
+		// 		users = [{
+		// 			firstName: 'Anjali',
+		// 			lastName: 'Kumari',
+		// 			batchNo: 4
+		// 		}, {
+		// 			firstName: 'Chandan',
+		// 			lastName: 'Pandey',
+		// 			batchNo: 10
+		// 		}, {
+		// 			firstName: 'Rishav',
+		// 			lastName: 'Sagar',
+		// 			batchNo: 8
+		// 		}]
+		// 		resolve(users)
+		// 	}, 4000)
+		// })
+
+		// const handleUsersAPI = async () => {
+		// 	try {
+		// 		let users = await promise1
+		// 		console.log(users)
+		// 	} catch (error) {
+		// 		console.log(error)
+		// 	}
+		// }
+		// handleUsersAPI()
+
+		/*
+			----------------------------------------------------------------
+		 # try-catch block: Handle run-time errors
+			Syntax:
+			try {
+
+			} catch (err) {
+
+			}
+
+			Code which may result into runtime error should be placed inside try block, if error exists, then catch block will take care of it.
+			----------------------------------------------------------------
+		*/
+		// console.log(1)
+		// console.log(2)
+		// try {
+		// 	console.log('Inside try block')
+		// 	let result = eval('apple+banana')
+		// 	console.log(result)
+		// } catch (error) {
+		// 	console.log('Inside catch block')
+		// 	console.log(error)
+		// }
+		// console.log(3)
+		// console.log(4)
+		// console.log(5)
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
+
+
+<!--
+	FE: Front-end / Client side
+	BE: Back-end / Server side
+
+	API: Application Programmer Interface: Medium through which client interacts with the server
+
+	Asynchronous: APIs
+
+	Inbuilt constructors
+	- Number()
+	- String()
+	- Date()
+
+	To make any function asynchronous: use async keyword
+		- async function abc() {}
+		- const abc = async function () {}
+		- const abc = async () => {}
+
+	Promise Chaining: When promise is returned from .then(), another .then() method is chained to handle it
+-->
