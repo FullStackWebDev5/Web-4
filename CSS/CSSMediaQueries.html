@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Media Queries</title>
+	<style>
+		body {
+			margin: 0;
+		}
+		#navbar-div {
+			margin: 0;
+			text-align: left;
+		}
+		#navbar-div ul {
+			list-style: none;
+    	display: inline-block;
+		}		
+		#navbar-div li {
+			display: inline-block;
+			padding: 0 20px;
+		}
+		.container-div {
+			text-align: center;
+		}
+		.parts {
+			display: inline-block;
+			width: 500px;
+			background-color: #F6C492;
+			padding: 10px;
+			margin-bottom: 10px;
+		}
+		.parts-2 {
+			display: inline-block;
+			width: 500px;
+			margin-bottom: 10px;
+			padding: 10px;
+		}
+		.parts-2 img {
+			width: 100%;
+		}
+
+		#part-2-2 {
+			background-color: #F6C492;
+		}
+
+		#navbar-div {
+			background-color: #F6C492;
+		}
+
+		@media screen and (max-width: 576px) {
+			.parts{
+				max-width: 90%;
+				margin-bottom: 20px;
+			}
+
+			.parts-2 {
+				max-width: 90%;
+			}
+
+			#navbar-div .navbar-item {
+				display: none;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container-div">
+		<div id="navbar-div">
+			<ul>
+				<li>My Website</li>
+				<li class="navbar-item">Home</li>
+				<li class="navbar-item">About Us</li>
+				<li class="navbar-item">Contact Us</li>
+			</ul>
+		</div>
+		<h1>Lorem ipsum dolor sit amet</h1>
+		<div class="parent-div">
+			<div class="parts">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, voluptate. Qui tenetur dolores nulla optio culpa enim tempora, rerum officiis vel dolorum fuga saepe, omnis, nobis quo illo ratione consectetur.
+			</div>
+			<div class="parts">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, voluptate. Qui tenetur dolores nulla optio culpa enim tempora, rerum officiis vel dolorum fuga saepe, omnis, nobis quo illo ratione consectetur.
+			</div>
+		</div>
+		<div class="parent-div">
+			<div class="parts-2">
+				<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--_HBZhuhF--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/nweeqf97l2md3tlqkjyt.jpg" alt="developer-img">
+			</div>
+			<div class="parts-2" id="part-2-2">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, voluptate. Qui tenetur dolores nulla optio culpa enim tempora, rerum officiis vel dolorum fuga saepe, omnis, nobis quo illo ratione consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil expedita at obcaecati consectetur explicabo! Qui facilis commodi corporis omnis totam illo eos quisquam nemo quas velit iste libero, corrupti ut dolor sunt deleniti, quibusdam quam modi ea optio rem eligendi consequuntur fugit iure. Accusamus sed suscipit odio iure amet obcaecati est rerum ducimus minima beatae recusandae perspiciatis tenetur quibusdam aliquam tempora voluptatem esse laudantium deserunt, numquam, consequatur dolores. Distinctio culpa molestiae praesentium ad eum, recusandae, et magni quod optio ab consequatur quis suscipit vel odit. Neque, maiores iure nemo tenetur quos, soluta itaque officiis possimus quis odit deleniti? Fugit, autem nam aliquid optio reprehenderit expedita ratione natus. Quos quam voluptatibus tempora vitae maxime. Enim sint, accusamus suscipit aspernatur voluptates ea laboriosam, ab nam eveniet numquam quam culpa molestias quis! Asperiores et molestias commodi reprehenderit ipsa sequi cupiditate laboriosam! Tenetur dicta deserunt odit repellendus odio soluta iusto possimus.
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+<!--
+	<h1 id="main-heading">CSS Media Queries</h1>
+	/* 
+	#main-heading {
+		color: red;
+	}
+
+	@media screen and (min-width: 768px) {
+		#main-heading {
+			color: blue;
+		}
+	} 
+	*/
+-->
